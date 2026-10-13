@@ -1,0 +1,16 @@
+/* 首頁以米色底襯托浮起的主視覺卡片 */
+.app-shell:has(.home-content){background:#f4eee6}
+.app-shell .main-content.home-content{padding:18px 16px 26px!important;background:#f4eee6;min-height:calc(100dvh - 78px)}
+.home-content .hero{min-height:540px}
+.home-content .hero{width:100%;max-width:680px;height:clamp(540px,calc(100dvh - 150px),690px);margin:0 auto;border-radius:30px;background:linear-gradient(145deg,#f47d53 0%,#ed6845 58%,#de5738 100%);box-shadow:0 18px 36px rgba(117,67,38,.18),0 3px 0 rgba(255,255,255,.55) inset}
+.home-content .hero-plate{z-index:2;bottom:130px;width:140px;height:140px;right:-34px}
+.home-content .hero-copy{z-index:3}
+.home-content .hero-brand{z-index:3}
+.home-content .hero-orb{opacity:.75}
+@media(max-width:360px){.home-content .hero-plate{width:84px;height:84px;right:-22px;bottom:130px}.home-content .hero-plate svg{width:30px;height:30px}.home-content .hero-plate span{font-size:6px}}
+.app-shell:has(.home-content) .bottom-nav{background:#fffdf9f2;border-top:1px solid #e8dfd5;box-shadow:0 -8px 22px rgba(116,78,48,.08)}
+.app-shell{padding-bottom:74px}
+.bottom-nav{height:64px;padding:4px 7px max(6px,env(safe-area-inset-bottom));}
+.bottom-nav button{gap:3px}
+
+@media(min-width:700px){.app-shell .main-content.home-content{padding:28px 34px 34px!important}.home-content .hero{height:clamp(560px,calc(100dvh - 165px),720px);border-radius:34px}}

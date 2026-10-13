@@ -1,0 +1,11 @@
+.couple-trail{position:absolute;z-index:4;left:20px;right:20px;bottom:16px;height:142px;overflow:hidden;pointer-events:none}
+.couple-track{position:absolute;left:6px;right:6px;bottom:5px;border-bottom:1px solid #fff2db50}
+.couple-travel{position:absolute;bottom:3px;right:-24px;width:210px;height:140px;animation:couple-ride-bob .36s ease-in-out infinite}
+.couple-riders{display:block;width:210px;height:140px;object-fit:contain;image-rendering:pixelated;filter:drop-shadow(0 3px 2px #71352224)}
+.couple-wheels{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.couple-wheel-spin{animation:couple-wheel-turn 1.1s linear infinite;transform-origin:0 0}
+.couple-wheel-spin-1{animation-delay:-.37s}
+@keyframes couple-ride-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes couple-wheel-turn{to{transform:rotate(360deg)}}
+.couple-trail[data-paused=true] .couple-travel,.couple-trail[data-paused=true] .couple-wheel-spin{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.couple-travel,.couple-wheel-spin{animation:none;transform:none;opacity:1}}
