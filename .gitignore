@@ -3,3 +3,8 @@ dist/
 .DS_Store
 *.local
 *.tsbuildinfo
+.idea/
+*.iml
+.playwright-cli/
+output/playwright/
+reference-video-contact.png
